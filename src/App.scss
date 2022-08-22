@@ -1,0 +1,72 @@
+
+body{
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5bd8613c9b8fe80e31a0435a/d47e54dc-83f6-463f-8794-c724c47c9d44/Monsters.jpg")
+}
+
+
+.shufflebtn{
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+
+  button{
+    border-radius: 10px;
+    font-size: 40px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid #ffffff;
+  }
+}
+
+
+.cardkeywords{
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin: 2rem;
+}
+
+.cardpicked{
+  color: black;
+}
+.aside{
+  margin: 2rem;
+}
+
+.card{
+  width: 350px;
+  height: auto;
+  border: 5px solid #555;
+
+}
+
+
+
+header {
+  color: black;
+}
+main{
+  background-color: rgba(255, 255, 255, 0.741);
+  margin: 30px auto;
+  width: 70%;
+  height: 20%;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+
+footer{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+  }
+}
+
+
