@@ -1,5 +1,5 @@
 
-Sette opp react router :D 👍
+ 
 
 
 
@@ -17,6 +17,8 @@ Dokumentasjon: https://aztro.sameerkumar.website/
     
      -> Filter System på kort liste ❌
 
+
+     -> Sette opp react router :D 👍
 
 
 
