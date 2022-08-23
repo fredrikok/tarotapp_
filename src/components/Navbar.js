@@ -10,7 +10,9 @@ function Navbar() {
     <p>Navbar</p>
     <p>(Hamburgermenu)</p>
 
-
+    <Link to="/">Home</Link>
+    <br></br>
+    <br></br>
     <Link to="cardlist">Card List</Link>
     <br></br>
     <br></br>
@@ -20,6 +22,8 @@ function Navbar() {
     <Link to="Threespread">Three Spread Reading</Link>
     <br></br>
     <br></br>
+    <Link to="Horoscope">Daily Horoscope</Link>
+
     </div>
     </nav>
   )

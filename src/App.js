@@ -10,7 +10,7 @@ import Home from './pages/Home'
 import Cardlist from './pages/Cardlist'
 import Onespread from './pages/Onespread';
 import Threespread from './pages/Threespread';
-
+import Horoscope from './pages/Horoscope';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <Route path="/cardlist" element={<Cardlist />} />
         <Route path="/onespread" element={<Onespread />} />
         <Route path="/threespread" element={<Threespread />} />
+        <Route path="/horoscope" element={<Horoscope />} />
       </Routes>
     </Router>
     
