@@ -27,11 +27,17 @@ body{
   margin: 2rem;
 }
 
+.main-box{
+  display: flex;
+}
+
 .cardpicked{
   color: black;
 }
 .aside{
+  display: flex;
   margin: 2rem;
+  flex-direction: column;
 }
 
 .card{

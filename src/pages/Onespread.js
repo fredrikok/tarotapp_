@@ -28,6 +28,9 @@ return(
       <button onClick={shuffle}> Shuffle</button>
   </div>
 
+
+
+<div className='main-box'>
   <div className="cardpicked">
       <img className='card' src={img} alt='picture of a tarot card'/>
   </div>
@@ -37,6 +40,7 @@ return(
     <h3>{meaning}</h3>
     <p>{desc}</p>
   </div>
+</div>
 
 </main>
 

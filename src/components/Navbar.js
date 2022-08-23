@@ -8,7 +8,7 @@ function Navbar() {
     <nav>
     <div className='nav-bar'>
     <p>Navbar</p>
-    <p>(Sidemeny)</p>
+    <p>(Hamburgermenu)</p>
 
 
     <Link to="cardlist">Card List</Link>
