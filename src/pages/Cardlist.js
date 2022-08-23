@@ -26,7 +26,11 @@ function Cardlist() {
         <tr key={i}>        
         <td>{item.value}</td>
         <td>{item.name}</td>
-        <img className='listimg' src={`${item.image}`} />
+        <img 
+        className='listimg' 
+        src={`${item.image}`}
+        alt={item.name}
+         />
         </tr>
       ))}
     </div>
