@@ -8,23 +8,15 @@ class Aztro extends Component {
         }
     }
 
-    handleClick = () => {
+  
+    aries = () => {
     console.log('click')
-    const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+    const URL = 'https://aztro.sameerkumar.website/?sign=capricorn&day=today';
     fetch(URL, {
         method: 'POST'
     }).then(response => response.json())
     .then(json => { this.setState({json}); });
     }
-
-
-    // componentDidMount () {
-    //     const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
-    //     fetch(URL, {
-    //         method: 'POST'
-    //     }).then(response => response.json())
-    //     .then(json => { this.setState({json}); });
-    // }
 
 
 
@@ -35,13 +27,14 @@ class Aztro extends Component {
         return (
 
           <main>
+            <p> WIP gjøre om API json greine til variabler eller noe </p>
             
           <h1>Current Date: {this.state.json.current_date}</h1>
           
           <div className='zodiac-btn'>
 
               
-            <button onClick={this.handleClick}>
+            <button onClick={this.aries}>
             Aries
             </button>
               <button>Taurus</button>
