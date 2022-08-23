@@ -12,6 +12,8 @@ API horoscope
 Dokumentasjon: https://aztro.sameerkumar.website/
 
 
+     -> Sidemeny som popper fra venstre til høyre ❌
+
     -> Lage så man kan velge hvilket tegn man vil ❌
     
     
