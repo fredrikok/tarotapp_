@@ -8,45 +8,56 @@ class Aztro extends Component {
         }
     }
 
-    componentDidMount () {
-
-
-        const URL = 'https://aztro.sameerkumar.website/';
-        fetch(URL, {
-            method: 'POST'
-        }).then(response => response.json())
-        .then(json => { this.setState({json}); });
-
-        console.log(this.state)
+    handleClick = () => {
+    console.log('click')
+    const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+    fetch(URL, {
+        method: 'POST'
+    }).then(response => response.json())
+    .then(json => { this.setState({json}); });
     }
+
+
+    // componentDidMount () {
+    //     const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+    //     fetch(URL, {
+    //         method: 'POST'
+    //     }).then(response => response.json())
+    //     .then(json => { this.setState({json}); });
+    // }
+
+
+
+
+
 
     render() {
         return (
+
           <main>
-
-
-
-
+            
           <h1>Current Date: {this.state.json.current_date}</h1>
-
+          
           <div className='zodiac-btn'>
-            <button>Aries</button>
-            <button>Taurus</button>
-            <button>Gemini</button>
-            <button>Cancer</button>
-            <button>Leo</button>
-            <button>Virgo</button>
-            <button>Libra</button>
-            <button>Scorpio</button>
-            <button>Sagittarius</button>
-            <button>Capricorn</button>
-            <button>Aquarius </button>
-            <button>Pisces</button>
+
+              
+            <button onClick={this.handleClick}>
+            Aries
+            </button>
+              <button>Taurus</button>
+              <button>Gemini</button>
+              <button>Cancer</button>
+              <button>Leo</button>
+              <button>Virgo</button>
+              <button>Libra</button>
+              <button>Scorpio</button>
+              <button>Sagittarius</button>
+              <button>Capricorn</button>
+              <button>Aquarius </button>
+              <button>Pisces</button>
           </div>
 
           <br />
-
-
               Compatibility: {this.state.json.compatibility} <br />
               Lucky Number: {this.state.json.lucky_number} <br />
               Lucky Time: {this.state.json.lucky_time} <br />
