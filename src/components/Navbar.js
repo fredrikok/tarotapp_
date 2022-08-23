@@ -23,6 +23,9 @@ function Navbar() {
     <br></br>
     <br></br>
     <Link to="Horoscope">Daily Horoscope</Link>
+    <br></br>
+    <br></br>
+    <Link to="Credits">Credits</Link>
 
     </div>
     </nav>
