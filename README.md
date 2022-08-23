@@ -21,7 +21,9 @@ Dokumentasjon: https://aztro.sameerkumar.website/
 
 
 
+Credits: 
 
+https://rws-cards-api.herokuapp.com/
 
-
+https://aztro.sameerkumar.website/
 
