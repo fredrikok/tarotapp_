@@ -29,13 +29,26 @@
     margin-left: 1rem;
     font-size: 2rem;
     color: white;
-
+    animation-name: menucolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
     
     :hover{
       transition: color 0.5s ease-out 10ms;
       color: black;
     }
-  }
+      @keyframes menucolor {
+        0% {
+          color: rgb(255, 255, 255);
+        }
+        50% {
+          color: #000000;
+        }
+        100% {
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
   
   .nav-menu {
     background-color: black;
