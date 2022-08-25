@@ -4,7 +4,7 @@ import './App.scss';
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 //components
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar_component/Navbar';
 //Pages
 import Home from './pages/Home'
 import Cardlist from './pages/Cardlist'
