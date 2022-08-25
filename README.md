@@ -26,6 +26,8 @@ https://rws-cards-api.herokuapp.com/
 
 https://aztro.sameerkumar.website/
 
+bilder :
+
 https://en.wikipedia.org/wiki/Rider%E2%80%93Waite_tarot_deck
 
 https://www.yoshitakaamano.com/
