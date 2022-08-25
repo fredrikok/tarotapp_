@@ -16,6 +16,12 @@ export const NavData = [
     cName: "nav-text"
   },
   {
+    title: "List",
+    path: "/cardlist",
+    icon: <AiIcons.AiOutlineOrderedList />,
+    cName: "nav-text"
+  },
+  {
     title: "One spread",
     path: "/onespread",
     icon: <GiIcons.GiCardAceDiamonds />,
