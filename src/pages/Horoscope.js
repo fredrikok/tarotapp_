@@ -8,7 +8,6 @@ class Aztro extends Component {
         }
     }
 
-  
     aries = () => {
     console.log('click')
     const URL = 'https://aztro.sameerkumar.website/?sign=capricorn&day=today';
@@ -20,12 +19,11 @@ class Aztro extends Component {
 
 
 //få sign til å bli dynamisk 
-
-
+//lage en base url for alle tegna og loade API på siden når du trykker inn
 
     render() {
         return (
-
+          
           <main>
             <p> WIP gjøre om API json greine til variabler eller noe </p>
             
