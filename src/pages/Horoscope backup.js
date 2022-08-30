@@ -19,7 +19,7 @@ class Aztro extends Component {
     }
 
 
-//få sign til å bli dynamisk 
+
 
 
 

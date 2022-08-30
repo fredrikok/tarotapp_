@@ -39,6 +39,10 @@ body{
   display: flex;
   margin: 2rem;
   flex-direction: column;
+
+  h3{
+    transition: color 0.5s ease-out 10ms;
+  }
 }
 
 .card{

@@ -32,17 +32,18 @@
     animation-name: menucolor;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    position: fixed;
     
     :hover{
       transition: color 0.5s ease-out 10ms;
-      color: black;
+      color: #ff5900
     }
       @keyframes menucolor {
         0% {
           color: rgb(255, 255, 255);
         }
         50% {
-          color: #000000;
+          color: #ff5900;
         }
         100% {
           color: rgb(255, 255, 255);
@@ -113,6 +114,6 @@
 
 .github-logo{
 
-  font-size: 30px;
+  font-size: 35px;
   color: white;
 }
