@@ -6,6 +6,7 @@ function Home() {
     <>
       <main>
         <h1>Home Page</h1>
+        <p>Test endring</p>
         <p>Try the Epic free tarot reading app</p>
         <p>Made with React</p>
 
