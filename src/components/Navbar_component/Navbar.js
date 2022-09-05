@@ -21,7 +21,7 @@ function Navbar() {
   return (
   <>
 
-    <div classname="navbar">
+    <div className="navbar">
 
       <Link to="#" className='menu-bars'>
         <FaIcons.FaBars onClick={showNavbar} />
