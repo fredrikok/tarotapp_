@@ -42,7 +42,7 @@ if (Math.random() >= 0.5) {
       />
   </div>
   <div className='aside'>
-    <h3>{result} </h3>
+    <h3>{result} : Reversed </h3>
     <h3>{meaning}</h3>
     <p>{desc}</p>
   </div>
@@ -51,7 +51,7 @@ if (Math.random() >= 0.5) {
   )
   } else {    
 
-    return(
+  return(
 <main>
 <div className="shufflebtn">
       <button onClick={shuffle}> Shuffle</button>
@@ -65,7 +65,7 @@ if (Math.random() >= 0.5) {
       />
   </div>
   <div className='aside'>
-    <h3>{result} </h3>
+    <h3>{result} : Reversed </h3>
     <h3>{meaning}</h3>
     <p>{desc}</p>
   </div>
