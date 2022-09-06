@@ -96,6 +96,12 @@ main {
 }
 
 
+  .cardpicked{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .main-box{
     display: flex;
     flex-direction: column;
@@ -114,7 +120,7 @@ main {
   }
 
   .card{
-    width: 100%;
+    width: 80%;
   }
 
 
