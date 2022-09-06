@@ -80,3 +80,37 @@ footer{
 }
 
 
+//breakoint mobile device 
+
+@media only screen and (max-width: 800px) {
+
+main {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(255, 0, 0, 0.838);
+  margin: 30px auto;
+  width: 85%;
+  height: 20%;
+  border-radius: 10px;
+  padding: 10px 20px;
+  }
+
+
+  .main-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardkeywords{
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin: 2rem;
+  }
+
+  .aside{
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}

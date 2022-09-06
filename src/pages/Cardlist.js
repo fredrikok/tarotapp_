@@ -3,7 +3,9 @@ import Tarot from '../data/tarot.json'
 import './Cardlist.scss'
 
 
-
+//TODO
+//lage et filter som sorterer kort etter TYPE
+// EVT Lage en dynamisk slug som viser properties til kortene. 
 
 function Cardlist() {
   return (
