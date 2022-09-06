@@ -6,8 +6,8 @@ function Home() {
     <>
       <main>
         <h1>Home Page</h1>
-        <p>Test endring</p>
-        <p>Try the Epic free tarot reading app</p>
+        <p>Try the Epic free tarot reading app</p>        
+        <p>Includes all of the original 78 Rider Waite cards with both upright and reversed meanings</p>
         <p>Made with React</p>
 
         <p>List of Cards</p>
