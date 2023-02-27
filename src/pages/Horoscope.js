@@ -1,8 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 
-class Aztro extends Component {
-
-  
+class Aztro extends Component {  
   constructor(props) {
     super(props);
     this.state = {
@@ -65,7 +63,6 @@ class Aztro extends Component {
           <button onClick={() => this.fetchHoroscope('pisces')}>
             pisces 
           </button>
-          {/* Repeat for all signs */}
         </div>
         <br />
         <h2>SIGN: {}</h2>

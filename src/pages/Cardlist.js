@@ -45,5 +45,4 @@ function Cardlist() {
     </main>
   );
 }
-
 export default Cardlist;

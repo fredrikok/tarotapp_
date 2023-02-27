@@ -4,6 +4,7 @@
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg",
       "type": "major",
+      "slug": "the-magician",
       "name_short": "ar01",
       "name": "The Magician",
       "value": "1",
@@ -15,6 +16,7 @@
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/RWS_Tarot_02_High_Priestess.jpg",
       "type": "major",
+      "slug": "the-high-priestess",
       "name_short": "ar02",
       "name": "The High Priestess",
       "value": "2",
