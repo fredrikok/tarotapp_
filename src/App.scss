@@ -1,3 +1,13 @@
+// @font-face {
+//   font-family: "Medium";   /*Can be any text*/
+//   src: local("AncientMedium"),
+//     url("./font/Ancient\ Medium.ttf") format("truetype");
+// }
+
+
+.quick-nav{
+  position: absolute;
+}
 
 body{
   background-image: url("https://images.squarespace-cdn.com/content/v1/5bd8613c9b8fe80e31a0435a/d47e54dc-83f6-463f-8794-c724c47c9d44/Monsters.jpg");
@@ -58,9 +68,8 @@ main{
 
   box-shadow: 0 0 20px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.838);
-  margin: 30px auto;
-  width: 85%;
-  height: 20%;
+  margin: 0px auto;
+  width: 93%;  
   border-radius: 10px;
   padding: 10px 20px;
 }

@@ -12,20 +12,26 @@ import Onespread from './pages/Onespread';
 import Threespread from './pages/Threespread';
 import Horoscope from './pages/Horoscope';
 import Credits from './pages/Credits';
+import QuickNav from './components/QuickNav';
+import ErrorPage from './pages/ErrorPage';
+import SingleCard from './pages/SingleCard';
 
 function App() {
   return (
     <>
 
-    <Router>    
+    <Router>  
+    <QuickNav />
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/cardlist" element={<Cardlist />} />
+        <Route path="/cardlist/:slug" element={<SingleCard />} />
         <Route path="/onespread" element={<Onespread />} />
         <Route path="/threespread" element={<Threespread />} />
         <Route path="/horoscope" element={<Horoscope />} />
         <Route path="/credits" element={<Credits />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
     

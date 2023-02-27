@@ -1,4 +1,8 @@
-
+@font-face {
+  font-family: "ancient";   /*Can be any text*/
+  src: local("AncientMedium"),
+    url("../font/Ancient\ Medium.ttf") format("truetype");
+}
 
 
 .listimg{
@@ -7,7 +11,32 @@
 
 .list{
     display: flex;
-    flex-direction: column;
-    
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
 }
 
+.single-card-list{
+    width: 200px;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    button{
+        font-family: ancient;
+        font-size: 40px;
+        color: inherit;
+        border: none;
+        padding: 0;
+        outline: inherit;
+        background: rgba(247, 198, 62, 0.508);
+        border-radius: 20px;
+        margin: 1rem;
+        padding: 0.3rem;
+    }
+    button:hover{
+        background: rgba(221, 164, 21, 0.808);
+    }
+}

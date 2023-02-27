@@ -13,7 +13,10 @@ function Credits() {
         <a href="https://www.yoshitakaamano.com/" target="_blank">yoshitaka amano</a>
         <a href="https://en.wikipedia.org/wiki/Rider%E2%80%93Waite_tarot_deck" target="_blank">Tarot Cards</a>
 
-    <p> App by Yven and Fref</p>
+        <p>Font</p>
+        <a href='https://www.dafont.com/ancient.font' target="_blank">
+          www.dafont.com
+        </a>
 
     </main>
   )

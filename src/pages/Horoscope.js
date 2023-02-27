@@ -1,84 +1,84 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 class Aztro extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-          json: {}
-        }
-    }
 
-    aries = () => {
-    console.log('click')
-    const URL = 'https://aztro.sameerkumar.website/?sign=capricorn&day=today';
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      json: {}
+    };
+  }
+
+  fetchHoroscope = (sign) => {
+    const URL = `https://aztro.sameerkumar.website/?sign=${sign}&day=today`;
     fetch(URL, {
-        method: 'POST'
-    }).then(response => response.json())
-    .then(json => { this.setState({json}); });
-    }
+      method: 'POST'
+    })
+      .then(response => response.json())
+      .then(json => { this.setState({ json }); });
+  }
 
+  componentDidMount() {
+    const date = new Date().toLocaleDateString();
+    this.setState({currentDate: date});
+  }
 
-//få sign til å bli dynamisk 
-//lage en base url for alle tegna og loade API på siden når du trykker inn
-
-    render() {
-        return (
-          
-          <main>
-            <p> WIP gjøre om API json greine til variabler eller noe </p>
-            
-          <h1>Current Date: {this.state.json.current_date}</h1>
-          
-          <div className='zodiac-btn'>
-
-              
-            <button onClick={this.aries}>
+  render() {
+    return (
+      <main>
+        <h1>Current Date: {this.state.currentDate}</h1>
+        <div className='zodiac-btn'>
+          <button onClick={() => this.fetchHoroscope('aries')}>
             Aries
-            </button>
-              <button>Taurus</button>
-              <button>Gemini</button>
-              <button>Cancer</button>
-              <button>Leo</button>
-              <button>Virgo</button>
-              <button>Libra</button>
-              <button>Scorpio</button>
-              <button>Sagittarius</button>
-              <button>Capricorn</button>
-              <button>Aquarius </button>
-              <button>Pisces</button>
-          </div>
-
-          <br />
-              Compatibility: {this.state.json.compatibility} <br />
-              Lucky Number: {this.state.json.lucky_number} <br />
-              Lucky Time: {this.state.json.lucky_time} <br />
-              Color: {this.state.json.color} <br />
-              Date Range: {this.state.json.date_range} <br />
-              Mood: {this.state.json.mood} <br />
-              Description: {this.state.json.description} <br />
-              
-          </main>
-        );
-    }
+          </button>
+          <button onClick={() => this.fetchHoroscope('taurus')}>
+            Taurus
+          </button>
+          <button onClick={() => this.fetchHoroscope('gemini')}>
+            Gemini
+          </button>
+          <button onClick={() => this.fetchHoroscope('cancer')}>
+            Cancer 
+          </button>
+          <button onClick={() => this.fetchHoroscope('leo')}>
+            Leo 
+          </button>
+          <button onClick={() => this.fetchHoroscope('virgo')}>
+            Virgo 
+          </button>
+          <button onClick={() => this.fetchHoroscope('libra')}>
+            Libra 
+          </button>
+          <button onClick={() => this.fetchHoroscope('scorpio')}>
+            scorpio 
+          </button>
+          <button onClick={() => this.fetchHoroscope('sagittarius')}>
+            sagittarius 
+          </button>
+          <button onClick={() => this.fetchHoroscope('capricorn')}>
+            capricorn 
+          </button>
+          <button onClick={() => this.fetchHoroscope('aquarius')}>
+            aquarius 
+          </button>
+          <button onClick={() => this.fetchHoroscope('pisces')}>
+            pisces 
+          </button>
+          {/* Repeat for all signs */}
+        </div>
+        <br />
+        <h2>SIGN: {}</h2>
+        Compatibility: {this.state.json.compatibility} <br />
+        Lucky Number: {this.state.json.lucky_number} <br />
+        Lucky Time: {this.state.json.lucky_time} <br />
+        Color: {this.state.json.color} <br />
+        Date Range: {this.state.json.date_range} <br />
+        Mood: {this.state.json.mood} <br />
+        Description: {this.state.json.description} <br />
+      </main>
+    );
+  }
 }
 
 export default Aztro;
-
-
-//backup
-
-// function Horoscope() {
-//   return (
-//     <main>
-//         <h1>Daily Horoscope</h1>
-//         <p>😎Choose your sign 😎</p>
-//         <button> libra </button>
-
-
-
-
-//     </main>
-//   )
-// }
-
-// export default Horoscope
