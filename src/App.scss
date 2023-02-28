@@ -9,6 +9,33 @@ body{
 }
 
 
+
+
+
+
+//reading Animation
+.shake {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .shufflebtn{
   padding: 2rem;
   margin: 2rem;
@@ -25,6 +52,7 @@ body{
 }
 
 
+
 .cardkeywords{
   display: flex;
   align-items: center;
@@ -34,11 +62,10 @@ body{
 .home-links{
   display: flex;
   flex-direction: column;
-  align-items: center;
   a{
     font-family: ancient;
     color: black;
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 
@@ -153,18 +180,18 @@ width: 600px;
   body{
     background-image: url("./Img/smallmonster.png");
   }
-main {
+  main {
   box-shadow: 0 0 20px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.838);
   margin: 30px auto;
   height: 100%;
   border-radius: 0px;
   padding: 10px 20px;
-}
+  }
 
   .filters{
     flex-direction: column;
-    gap: 0rem;
+    gap: 0;
   }
   .cardpicked{
     display: flex;

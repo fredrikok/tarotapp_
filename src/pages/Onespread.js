@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import QuickNav from '../components/QuickNav';
 import Tarot from '../data/tarot.json';
+import questionCard from '../Img/emptycard.jpg';
 
 const Card = ({ img, result, meaning, desc, isReversed }) => {
   return (
@@ -28,17 +29,35 @@ const Card = ({ img, result, meaning, desc, isReversed }) => {
 
 const TarotCard = () => {
   const [card, setCard] = useState({});
+  const [questionCardVisible, setQuestionCardVisible] = useState(true);
+  const [shakeAnimation, setShakeAnimation] = useState(false);
+
   const shuffle = () => {
-    const randomCard = Tarot.cards[Math.floor(Math.random() * Tarot.cards.length)];
-    setCard(randomCard);
+    setShakeAnimation(true);
+    setTimeout(() => {
+      const randomCard = Tarot.cards[Math.floor(Math.random() * Tarot.cards.length)];
+      setCard(randomCard);
+      setQuestionCardVisible(false);
+      setShakeAnimation(false);
+    }, 1000);
   };
+
   return (
     <main>
       <QuickNav />
       <div className="shufflebtn">
         <button onClick={shuffle}>Shuffle</button>
       </div>
-      {card.name &&
+
+      {questionCardVisible && (
+        <img
+          className={`question-card${shakeAnimation ? ' shake' : ''}`}
+          src={questionCard}
+          alt='Question card'
+        />
+      )}
+
+      {card.name && (
         <Card
           img={card.image}
           result={card.name}
@@ -46,7 +65,7 @@ const TarotCard = () => {
           desc={card.desc}
           isReversed={Math.random() >= 0.5}
         />
-      }
+      )}
     </main>
   );
 };
