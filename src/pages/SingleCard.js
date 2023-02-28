@@ -1,19 +1,21 @@
 import React from 'react';
 import tarotData from '../data/tarot.json';
 import { useParams } from 'react-router-dom';
+import QuickNav from '../components/QuickNav';
 
 function SingleCard() {
   const { slug } = useParams();
   const cards = tarotData.cards;
-  const card = cards.find(card => card.slug === slug);
+  const card = cards.find(card => card.name_short === slug);
 
   if (!card) {
     return <div>Card not found</div>
   }
 
   return (
-    <main>     
-        <div className="main-box">
+    <main> 
+      <QuickNav />
+      <div className="main-box">
       <div className="cardpicked">
       <img 
       className='card'

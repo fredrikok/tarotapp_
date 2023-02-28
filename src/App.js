@@ -20,8 +20,8 @@ function App() {
   return (
     <>
 
-    <Router>  
-    <QuickNav />
+    <Router> 
+      <QuickNav /> 
       <Navbar />
       <Routes>
         <Route index element={<Home />} />

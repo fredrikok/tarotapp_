@@ -77,6 +77,12 @@
     padding: 8px 0 8px 16px;
     list-style: none;
     height: 60px;
+
+      a{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+      }
   }
   
   .nav-text a {
@@ -119,3 +125,23 @@
   font-size: 35px;
   color: white;
 }
+
+
+
+//Breadcrumbs
+
+.breadcrumbs{
+}
+
+.breadcrumb-not-active {
+  visibility: hidden;
+  }
+  
+  .breadcrumb-active {
+    color: #000000;
+  }
+  
+  .breadcrumb-arrow {
+    margin-left: 10px;
+    margin-right: 10px;
+  }

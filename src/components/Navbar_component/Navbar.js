@@ -48,9 +48,6 @@ function Navbar() {
         </li> 
       )
     })}
-    <a href="https://github.com/fredrikok/tarotapp_" target="_blank" className="github-logo">
-    <AiIcons.AiFillGithub></AiIcons.AiFillGithub>
-    </a>
   </ul>
   </nav>
     </>

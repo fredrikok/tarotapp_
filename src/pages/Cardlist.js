@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import QuickNav from '../components/QuickNav';
 import Tarot from '../data/tarot.json';
+
 import './Cardlist.scss';
 
 function Cardlist() {
@@ -23,6 +25,7 @@ function Cardlist() {
 
   return (
     <main>
+      <QuickNav />
       <div className="filters">
         <button onClick={() => setSelectedSuit('all')}>All</button>
         <button onClick={() => setSelectedSuit('wands')}>Wands</button>
@@ -35,7 +38,7 @@ function Cardlist() {
       <h2>List Of Tarot Cards</h2>
       <div className="list">
         {filteredCards.map((card) => (
-          <Link to={`/cardlist/${card.slug}`} key={card.name} className='single-card-list'>
+          <Link to={`/cardlist/${card.name_short}`} key={card.name} className='single-card-list'>
             <div>{card.name}</div>
             <div>{card.suit}</div>
             <img className="listimg" src={card.image} alt={card.name} />
@@ -45,4 +48,5 @@ function Cardlist() {
     </main>
   );
 }
+
 export default Cardlist;

@@ -28,6 +28,7 @@
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_03_Empress.jpg",
       "type": "major",
+      "slug": "the-empress",
       "name_short": "ar03",
       "name": "The Empress",
       "value": "3",
@@ -39,6 +40,7 @@
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/RWS_Tarot_04_Emperor.jpg",
       "type": "major",
+      "slug": "the-emperor",
       "name_short": "ar04",
       "name": "The Emperor",
       "value": "4",
@@ -50,6 +52,7 @@
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/RWS_Tarot_05_Hierophant.jpg/150px-RWS_Tarot_05_Hierophant.jpg",
       "type": "major",
+      "slug": "the-hierophant",
       "name_short": "ar05",
       "name": "The Hierophant",
       "value": "5",
@@ -61,6 +64,7 @@
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/TheLovers.jpg",
       "type": "major",
+      "slug": "the-lovers",
       "name_short": "ar06",
       "name": "The Lovers",
       "value": "6",
