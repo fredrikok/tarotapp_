@@ -12,7 +12,6 @@ import Onespread from './pages/Onespread';
 import Threespread from './pages/Threespread';
 import Horoscope from './pages/Horoscope';
 import Credits from './pages/Credits';
-import QuickNav from './components/QuickNav';
 import ErrorPage from './pages/ErrorPage';
 import SingleCard from './pages/SingleCard';
 
@@ -21,7 +20,6 @@ function App() {
     <>
 
     <Router> 
-      <QuickNav /> 
       <Navbar />
       <Routes>
         <Route index element={<Home />} />

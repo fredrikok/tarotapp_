@@ -1,31 +1,32 @@
-import { Link, useLocation } from 'react-router-dom'
+import React from "react";
+import {  Link, useLocation } from "react-router-dom";
 
 function QuickNav() {
-const location = useLocation();
+  const location = useLocation();
+  const pathParts = location.pathname.split("/").filter(Boolean);
 
+  const breadcrumbs = pathParts.map((part, index) => {
+    const path = `/${pathParts.slice(0, index + 1).join("/")}`;
+    const isActive = location.pathname.startsWith(path);
+    const className = isActive ? "breadcrumb-active" : "breadcrumb-not-active";
+    return (
+      <React.Fragment key={index}>
+        <span className={className}>&gt;</span>
+        <Link to={path} className={className}>
+          {part}
+        </Link>
+      </React.Fragment>
+    );
+  });
 
-TODO:
-//Fix driten og gjør det dynamisk
-
-return (
-<div className='breadcrumbs'>
-
-    <Link to="/" className="breadcrumb-active">
-    Home
-    </Link>
-    <span className="breadcrumb-arrow">&gt;</span>
-
-    <Link to="/cardlist" className={location.pathname.startsWith("/cardlist") ? "breadcrumb-active" : "breadcrumb-not-active"}>
-    Cardlist
-    </Link>
-
-    <span className="breadcrumb-arrow">&gt;</span>
-
-    <Link to="/cardlist/ar01" className={location.pathname === "/cardlist/ar01" ? "breadcrumb-active" : "breadcrumb-not-active"}>
-    slug
-    </Link>
+  return (
+    <div className="breadcrumbs">
+      <Link to="/" className="breadcrumb-active">
+        Home
+      </Link>
+      {breadcrumbs}
     </div>
-);
+  );
 }
 
 export default QuickNav;

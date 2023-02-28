@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import QuickNav from '../components/QuickNav'
 
 function Home() {
   return (
     <>
       <main>
+        <QuickNav />
         <h1>Home Page</h1>
         <p>Try the Epic free tarot reading app</p>        
         <p>Includes all of the original 78 Rider Waite cards with both upright and reversed meanings</p>

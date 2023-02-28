@@ -5,7 +5,6 @@ import './Navbar.scss'
 
 import { Link } from 'react-router-dom'
 //icons
-import { IconContext } from 'react-icons'
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 

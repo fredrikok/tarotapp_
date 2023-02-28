@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import QuickNav from '../components/QuickNav';
 import Tarot from '../data/tarot.json';
 
 const Card = ({ img, result, meaning, desc, isReversed }) => {
@@ -16,10 +18,14 @@ const Card = ({ img, result, meaning, desc, isReversed }) => {
         <h3>{result} : {isReversed ? 'Reversed' : 'Upright'}</h3>
         <p>{isReversed ? meaning.meaning_rev : meaning.meaning_up}</p>
         <p>{desc}</p>
+        <div className='read-more'>
+          <Link to={`/cardlist/${meaning.name_short}`}>Read More</Link>
+        </div>
       </div>
     </div>
   );
 };
+
 const TarotCard = () => {
   const [card, setCard] = useState({});
   const shuffle = () => {
@@ -28,6 +34,7 @@ const TarotCard = () => {
   };
   return (
     <main>
+      <QuickNav />
       <div className="shufflebtn">
         <button onClick={shuffle}>Shuffle</button>
       </div>
