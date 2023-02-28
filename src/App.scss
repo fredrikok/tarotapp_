@@ -150,7 +150,9 @@ width: 600px;
 //breakoint mobile device 
 
 @media only screen and (max-width: 800px) {
-
+  body{
+    background-image: url("./Img/smallmonster.png");
+  }
 main {
   box-shadow: 0 0 20px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.838);
