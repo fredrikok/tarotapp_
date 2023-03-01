@@ -22,14 +22,29 @@ body{
   0% {
     transform: rotate(0deg);
   }
+  5% {
+    transform: rotate(1deg);
+  }
+  10% {
+    transform: rotate(-1deg);
+  }
+  15% {
+    transform: rotate(1deg);
+  }
+  20% {
+    transform: rotate(-1deg);
+  }
   25% {
-    transform: rotate(3deg);
+    transform: rotate(1deg);
+  }
+  37% {
+    transform: rotate(-1deg);
   }
   50% {
-    transform: rotate(-3deg);
+    transform: rotate(1deg);
   }
   75% {
-    transform: rotate(3deg);
+    transform: rotate(-1deg);
   }
   100% {
     transform: rotate(0deg);
@@ -69,9 +84,21 @@ body{
   }
 }
 
-.main-box{
+.main-box {
   display: flex;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards; // Add this line
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .horoscope-main{
   h4{
@@ -231,7 +258,19 @@ width: 600px;
   .main-box{
     display: flex;
     flex-direction: column;
+    animation: 1s fadeIn;
+
   }
+  //card picked animation
+  @keyframes fadeIn {
+    0% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
 
   .cardkeywords{
     display: flex;

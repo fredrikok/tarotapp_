@@ -39,16 +39,27 @@ const TarotCard = () => {
       setCard(randomCard);
       setQuestionCardVisible(false);
       setShakeAnimation(false);
+      setShuffleButton("Try Again"); 
     }, 1000);
   };
 
+  const tryAgain = () => {
+    window.location.reload();
+  };
+  
+  const [shuffleButton, setShuffleButton] = useState("Shuffle"); 
+  
   return (
     <main>
       <QuickNav />
       <div className="shufflebtn">
-        <button onClick={shuffle}>Shuffle</button>
+        {questionCardVisible ? (
+          <button onClick={shuffle}>{shuffleButton}</button>
+        ) : (
+          <button onClick={tryAgain}>Try Again</button> // use the tryAgain function
+        )}
       </div>
-
+  
       {questionCardVisible && (
         <img
           className={`question-card${shakeAnimation ? ' shake' : ''}`}
@@ -56,7 +67,6 @@ const TarotCard = () => {
           alt='Question card'
         />
       )}
-
       {card.name && (
         <Card
           img={card.image}
@@ -68,6 +78,6 @@ const TarotCard = () => {
       )}
     </main>
   );
-};
+}  
 
 export default TarotCard;
