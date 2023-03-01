@@ -4,8 +4,8 @@ import QuickNav from '../components/QuickNav';
 const SIGN_IMAGES = {
   aries: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sidney_Hall_-_Urania%27s_Mirror_-_Aries_and_Musca_Borealis.jpg/800px-Sidney_Hall_-_Urania%27s_Mirror_-_Aries_and_Musca_Borealis.jpg',
   taurus: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Sidney_Hall_-_Urania%27s_Mirror_-_Taurus.jpg/1280px-Sidney_Hall_-_Urania%27s_Mirror_-_Taurus.jpg',
-  gemini: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sidney_Hall_-_Urania%27s_Mirror_-_Gemini.jpg/280px-Sidney_Hall_-_Urania%27s_Mirror_-_Gemini.jpg',
-  cancer: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Sidney_Hall_-_Urania%27s_Mirror_-_Cancer.jpg/210px-Sidney_Hall_-_Urania%27s_Mirror_-_Cancer.jpg',
+  gemini: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sidney_Hall_-_Urania%27s_Mirror_-_Gemini.jpg/1280px-Sidney_Hall_-_Urania%27s_Mirror_-_Gemini.jpg',
+  cancer: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Sidney_Hall_-_Urania%27s_Mirror_-_Cancer.jpg/800px-Sidney_Hall_-_Urania%27s_Mirror_-_Cancer.jpg',
   leo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Sidney_Hall_-_Urania%27s_Mirror_-_Leo_Major_and_Leo_Minor.jpg/800px-Sidney_Hall_-_Urania%27s_Mirror_-_Leo_Major_and_Leo_Minor.jpg',
   virgo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sidney_Hall_-_Urania%27s_Mirror_-_Virgo.jpg/1280px-Sidney_Hall_-_Urania%27s_Mirror_-_Virgo.jpg',
   libra: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sidney_Hall_-_Urania%27s_Mirror_-_Libra.jpg/1280px-Sidney_Hall_-_Urania%27s_Mirror_-_Libra.jpg',
@@ -46,7 +46,7 @@ class Aztro extends Component {
       <main className='horoscope-main'>
       <QuickNav />
         <h1>Current Date: {this.state.currentDate}</h1>
-        <div className='zodiac-btn'>
+        <div className='filters'>
           <button onClick={() => this.fetchHoroscope('aries')}>
             Aries
           </button>
@@ -83,7 +83,24 @@ class Aztro extends Component {
           <button onClick={() => this.fetchHoroscope('pisces')}>
             Pisces 
           </button>
-          {/* Rest of the buttons... */}
+        </div>
+          {/* Filter */}
+        <div className='filter-mobile'>
+          <select name="sign" id="sign" onChange={(event) => this.fetchHoroscope(event.target.value)}>
+          <option value="none" selected disabled hidden>Choose</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="aries">Aries</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <option value="cancer">Cancer</option>
+            <option value="leo">Leo</option>
+            <option value="virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="scorpio">Scorpio</option>
+            <option value="sagittarius">Sagittarius</option>
+            <option value="aquarius">Aquarius</option>
+            <option value="pisces">Pisces</option>
+          </select>
         </div>
         {/* Wrapper */}
         <div className="horoscope-wrapper">

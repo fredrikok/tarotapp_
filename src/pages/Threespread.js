@@ -3,7 +3,7 @@ import React from 'react'
 function Threespread() {
   return (
     <main>
-      <h1>Three spread reading</h1>
+      <h1>Comming Soon</h1>
     </main>
   )
 }
