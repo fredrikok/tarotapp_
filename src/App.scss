@@ -23,13 +23,13 @@ body{
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(15deg);
+    transform: rotate(3deg);
   }
   50% {
-    transform: rotate(-15deg);
+    transform: rotate(-3deg);
   }
   75% {
-    transform: rotate(15deg);
+    transform: rotate(3deg);
   }
   100% {
     transform: rotate(0deg);
@@ -174,7 +174,27 @@ width: 600px;
 }
 
 
+.filter-mobile{
+  visibility: hidden;
+}
+
+.filters{
+  visibility: visible;
+  flex-wrap: wrap;
+}
+
 //breakoint mobile device 
+@media only screen and (max-width: 400px) {
+  .listimg {
+    width: 100%;
+    height: -webkit-fill-available;
+
+  }
+  .single-card-list {
+    width: max-content;
+}
+}
+
 
 @media only screen and (max-width: 800px) {
   body{
@@ -189,9 +209,17 @@ width: 600px;
   padding: 10px 20px;
   }
 
+  .listimg {
+  }
+
+  .filter-mobile{
+    visibility: visible;
+  }
+
   .filters{
-    flex-direction: column;
-    gap: 0;
+    visibility: hidden;
+    position: absolute;
+    
   }
   .cardpicked{
     display: flex;
@@ -213,7 +241,7 @@ width: 600px;
 
   .aside{
     display: flex;
-    margin: 2rem;
+    margin: 0;
     flex-direction: column;
   }
 

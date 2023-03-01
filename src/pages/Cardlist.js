@@ -26,6 +26,9 @@ function Cardlist() {
   return (
     <main>
       <QuickNav />
+
+{/* Filter for cardlist */}
+
       <div className="filters">
         <button onClick={() => setSelectedSuit('all')}>All</button>
         <button onClick={() => setSelectedSuit('wands')}>Wands</button>
@@ -34,6 +37,20 @@ function Cardlist() {
         <button onClick={() => setSelectedSuit('cups')}>Cups</button>
         <button onClick={() => setSelectedSuit('other')}>Other</button>
       </div>
+      
+      <div className='filter-mobile'>
+      <select name="sort" id="sort" onChange={(event) => setSelectedSuit(event.target.value)}>
+        <option value="all">All</option>
+        <option value="wands">Wands</option>
+        <option value="swords">Swords</option>
+        <option value="pentacles">Pentacles</option>
+        <option value="cups">Cups</option>
+        <option value="other">Other</option>
+      </select>
+      </div>
+
+{/* Cardlist */}
+
       <h1>Cardlist</h1>
       <h2>List Of Tarot Cards</h2>
       <div className="list">
