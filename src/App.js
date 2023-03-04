@@ -14,6 +14,7 @@ import Horoscope from './pages/Horoscope';
 import Credits from './pages/Credits';
 import ErrorPage from './pages/ErrorPage';
 import SingleCard from './pages/SingleCard';
+import CollectedCards from './pages/CollectedCards';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/onespread" element={<Onespread />} />
         <Route path="/threespread" element={<Threespread />} />
         <Route path="/horoscope" element={<Horoscope />} />
+        <Route path="/collected" element={<CollectedCards />} />$
         <Route path="/credits" element={<Credits />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>

@@ -87,7 +87,16 @@ body{
 .main-box {
   display: flex;
   animation: 1s fadeIn;
-  animation-fill-mode: forwards; // Add this line
+  animation-fill-mode: forwards;
+}
+
+
+//question card
+
+.question-card-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fadeIn {

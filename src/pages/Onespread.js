@@ -56,10 +56,11 @@ const TarotCard = () => {
         {questionCardVisible ? (
           <button onClick={shuffle}>{shuffleButton}</button>
         ) : (
-          <button onClick={tryAgain}>Try Again</button> // use the tryAgain function
+          <button onClick={tryAgain}>Try Again</button>
         )}
       </div>
   
+    <div className='question-card-wrapper'>
       {questionCardVisible && (
         <img
           className={`question-card${shakeAnimation ? ' shake' : ''}`}
@@ -67,6 +68,7 @@ const TarotCard = () => {
           alt='Question card'
         />
       )}
+    </div>
       {card.name && (
         <Card
           img={card.image}
