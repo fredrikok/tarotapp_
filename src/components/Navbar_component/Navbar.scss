@@ -1,108 +1,95 @@
-
-
 :root {
-    --navBg: #060b26;
-  }
-  
-  .navbar {
-    height: 80px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-  
-  .menu-bars {
-    margin-left: 1rem;
-    font-size: 2rem;
-    color: white;
-    animation-name: menucolor;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: fixed;
-    
-    :hover{
-      transition: color 0.5s ease-out 10ms;
-      color: #ff5900
-    }
-      @keyframes menucolor {
-        0% {
-          color: rgb(255, 255, 255);
-        }
-        50% {
-          color: #ff5900;
-        }
-        100% {
-          color: rgb(255, 255, 255);
-        }
-      }
-    }
-  
-  .nav-menu {
-    background-color: black;
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    transition: 850ms;
-    z-index: 1;
-  }
-  
-  .nav-menu.active {
-    left: 0;
-    transition: 350ms;
+  --navBg: #060b26;
+}
 
-  }
-  
-  .nav-text {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 8px 0 8px 16px;
-    list-style: none;
-    height: 60px;
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #000000dc;
+}
 
-      a{
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row-reverse;
-      }
-  }
-  
-  .nav-text a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 25px;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 4px;
-  }
-  
-  .nav-text a:hover {
-    background-color: #ff73009a;
-  }
-  
-  .nav-menu-items {
-    width: 100%;
-    padding: 0;
-  }
-  
-  .navbar-toggle {
+.menu-bars {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: #ff5900;
+  position: fixed;
+  transition: all 0.1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  :hover {
+    transition: all 0.1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transform: scale(1.1px);
   }
-  
 
-.github-logo{
+}
+
+.nav-menu {
+  background-color: black;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 1;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0 8px 16px;
+  list-style: none;
+  height: 60px;
+
+  a {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 25px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #ff73009a;
+}
+
+.nav-menu-items {
+  width: 100%;
+  padding: 0;
+}
+
+.navbar-toggle {
+
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+.github-logo {
   font-size: 35px;
   color: white;
 }
@@ -113,17 +100,24 @@
 
 .breadcrumb-not-active {
   visibility: hidden;
-  }
+}
 
-  .breadcrumbs{
-    margin-bottom: 1rem;
-  }
-  
-  .breadcrumb-active {
-    color: #000000;
-    margin-right: 1px;
-  }
-  
-  .breadcrumb-arrow {
+.breadcrumbs {
+  margin-bottom: 1rem;
+  text-decoration: none;
 
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #4b66ff;
+    }
   }
+}
+
+.breadcrumb-active {
+  color: #000000;
+  margin-right: 1px;
+}
+
+.breadcrumb-arrow {}

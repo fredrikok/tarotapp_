@@ -1,10 +1,8 @@
-
-
-.quick-nav{
+.quick-nav {
   position: absolute;
 }
 
-body{
+body {
   background-image: url("./Img/Monsters.jpg");
 }
 
@@ -22,45 +20,53 @@ body{
   0% {
     transform: rotate(0deg);
   }
+
   5% {
     transform: rotate(1deg);
   }
+
   10% {
     transform: rotate(-1deg);
   }
+
   15% {
     transform: rotate(1deg);
   }
+
   20% {
     transform: rotate(-1deg);
   }
+
   25% {
     transform: rotate(1deg);
   }
+
   37% {
     transform: rotate(-1deg);
   }
+
   50% {
     transform: rotate(1deg);
   }
+
   75% {
     transform: rotate(-1deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
 
-.shufflebtn{
+.shufflebtn {
   padding: 2rem;
   margin: 2rem;
   display: flex;
   justify-content: center;
 
-  button{
+  button {
     border-radius: 10px;
     font-size: 40px;
-    background-color: rgb(0, 0, 0);
     color: white;
     border: 2px solid #ffffff;
   }
@@ -68,16 +74,18 @@ body{
 
 
 
-.cardkeywords{
+.cardkeywords {
   display: flex;
   align-items: center;
   height: auto;
   margin: 2rem;
 }
-.home-links{
+
+.home-links {
   display: flex;
   flex-direction: column;
-  a{
+
+  a {
     font-family: ancient;
     color: black;
     font-size: 20px;
@@ -88,12 +96,16 @@ body{
   display: flex;
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
+
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 2rem;
 }
 
 
 //question card
 
-.question-card-wrapper{
+.question-card-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,64 +115,68 @@ body{
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 
-.horoscope-main{
-  h4{
+.horoscope-main {
+  h4 {
     margin: 0;
 
   }
-  p{
+
+  p {
     margin: 0;
   }
 }
 
-.cardpicked{
+.cardpicked {
   color: black;
 }
-.aside{
+
+.aside {
   display: flex;
-  margin: 2rem;
   flex-direction: column;
 
-  h3{
+  h3 {
     transition: color 0.5s ease-out 10ms;
     padding: 0;
     margin: 0;
   }
 }
 
-.card{
+.card {
   width: 350px;
   height: auto;
-  border: 5px solid #555;
-
+  filter: drop-shadow(2px 4px 6px black);
+  border-radius: 20px;
 }
 
 
-main{
-
-
+main {
   box-shadow: 0 0 20px rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.838);
-  // margin: 0px auto;
-  // width: 93%;  
-  // border-radius: 10px;
-  // padding: 10px 20px;
+  min-height: 100vh;
 }
 
+.centeredcontent {
+  background-color: rgba(255, 255, 255, 0.838);
+  margin: 0px auto;
+  max-width: 1200px;
+  padding-left: 1rem;
+  filter: drop-shadow(2px 4px 6px black);
+}
 
-footer{
+footer {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
   font-size: 16px;
   color: rgb(0, 0, 0);
-  a{
+
+  a {
     color: black;
     text-decoration: none;
     font-size: 30px;
@@ -170,8 +186,8 @@ footer{
 
 //horoscope
 
-.zodiac-btn{
-  button{
+.zodiac-btn {
+  button {
     font-family: ancient;
     font-weight: bold;
     font-size: 20px;
@@ -183,38 +199,40 @@ footer{
     border-radius: 20px;
     margin: 1rem;
     padding: 0.3rem;
-}
-button:hover{
+  }
+
+  button:hover {
     background: rgba(221, 164, 21, 0.808);
-}
-}
-
-.horoscope-wrapper{
-display: flex;
-h2{
-  margin: 0;
+  }
 }
 
-.horoscope-img{
+.horoscope-wrapper {
+  display: flex;
+
+  h2 {
+    margin: 0;
+  }
+
+  .horoscope-img {
+    width: 600px;
+  }
+}
+
+
+.left {
   width: 600px;
 }
+
+.right {
+  width: 600px;
 }
 
 
-.left{
-width: 600px;
-}
-
-.right{
-width: 600px;
-}
-
-
-.filter-mobile{
+.filter-mobile {
   visibility: hidden;
 }
 
-.filters{
+.filters {
   visibility: visible;
   flex-wrap: wrap;
 }
@@ -224,88 +242,88 @@ width: 600px;
   .listimg {
     width: 100%;
     height: -webkit-fill-available;
+    border-radius: 12px;
 
   }
+
   .single-card-list {
     width: max-content;
-}
+  }
 }
 
 
 @media only screen and (max-width: 800px) {
-  body{
+  body {
     background-image: url("./Img/smallmonster.png");
   }
+
   main {
-  box-shadow: 0 0 20px rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.838);
-  // margin: 30px auto;
-  // height: 100%;
-  // border-radius: 0px;
-  // padding: 10px 20px;
-  width: 100vw;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.838);
+
+    // height: 100%;
+    // border-radius: 0px;
+    // padding: 10px 20px;
   }
 
-  .listimg {
-  }
+  .listimg {}
 
-  .filter-mobile{
+  .filter-mobile {
     visibility: visible;
   }
 
-  .filters{
+  .filters {
     visibility: hidden;
     position: absolute;
-    
+
   }
-  .cardpicked{
+
+  .cardpicked {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
   }
 
-  .main-box{
+  .main-box {
     display: flex;
     flex-direction: column;
     animation: 1s fadeIn;
 
   }
+
   //card picked animation
   @keyframes fadeIn {
     0% {
       visibility: hidden;
     }
+
     100% {
       visibility: visible;
     }
   }
 
 
-  .cardkeywords{
+  .cardkeywords {
     display: flex;
     height: auto;
     margin: 2rem;
   }
 
-  .aside{
+  .aside {
     display: flex;
     margin: 0;
     flex-direction: column;
   }
 
-  .card{
+  .card {
     width: 80%;
   }
 
-//horoscope
+  //horoscope
 
-  .horoscope-wrapper{
+  .horoscope-wrapper {
     flex-direction: column;
   }
 
 }
-
-
-
-
